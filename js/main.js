@@ -1,3 +1,5 @@
+var database = firebase.database();
+
 function initMap(){
 
 	var map = new google.maps.Map(document.getElementById("map"), {
@@ -12,3 +14,5 @@ function initMap(){
 		title: "Location"
 	});
 }
+
+var reservationData = {};
