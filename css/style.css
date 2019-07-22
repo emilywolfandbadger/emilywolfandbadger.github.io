@@ -1,0 +1,57 @@
+body {
+	color: gray;
+	text-align: center;
+	font-size: 16px;
+	font-style: sans-serif;
+	font-family: "Arial", sans-serif;
+	border: 2px solid black;
+}
+h1 {
+	color: black;	
+}
+#header {
+}
+#header img {
+			width: 90%;
+}
+#reservations {
+	width: 100%;
+}
+#make_resv {
+	width: 49%;
+	float: left;
+}
+#exist_resv {
+	width: 49%;
+	float: right;
+}
+#come_dine {
+}
+#reviews {
+}
+.clearfix:after { 
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+#map {
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+#reviews img {
+	float: left;
+	padding: 2em;
+}
+#reviews p {
+	float: right;
+	padding: 2em;
+}
+#table_of_resv {
+	border: 1px solid black;
+	float: center;
+}
+
+
