@@ -8,7 +8,7 @@ function initMap(){
 		zoom: 10
 	});
 
-	var market = new google.maps.Market({
+	var marker = new google.maps.Marker({
 		position: {lat: 40.8054491, lng: -73.9654415},
 		map: map,
 		title: "Location"
