@@ -1,4 +1,6 @@
-var database = firebase.database();
+//var database = firebase.database();
+
+console.log(firebase.database());
 
 function initMap(){
 
