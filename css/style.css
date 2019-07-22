@@ -37,9 +37,10 @@ h1 {
   clear: both;
 }
 #map {
-	height: 100px;
+	height: 50em;
+	width: 50%;
 	margin: 0;
-	padding: 0;
+	padding: 100px;
 }
 #reviews img {
 	float: left;

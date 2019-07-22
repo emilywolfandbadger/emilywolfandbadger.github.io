@@ -18,3 +18,24 @@ function initMap(){
 }
 
 var reservationData = {};
+
+$("#resv_date").on("click", function(){
+
+
+	var day = $(this).toString();
+	reservationData.day = day;
+
+});
+
+$("#resv_form").on("submit", function(e){
+
+	e.preventDefault();
+
+	var name = $("#resv_name").val();
+	reservationData.name = name;
+
+	var reservationsRef = database.ref("reservations");
+
+	reservationsRef.push(reservationData);
+
+});
