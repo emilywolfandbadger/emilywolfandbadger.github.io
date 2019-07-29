@@ -1,6 +1,6 @@
 var database = firebase.database();
 
-console.log(firebase.database());
+//console.log(firebase.database());
 
 function initMap(){
 
@@ -8,12 +8,13 @@ function initMap(){
 
 		center: {lat: 40.8054491, lng: -73.9654415},
 		zoom: 10
+		scrollwheel: false
 	});
 
 	var marker = new google.maps.Marker({
 		position: {lat: 40.8054491, lng: -73.9654415},
 		map: map,
-		title: "Location"
+		title: "Location of Monk's Cafe"
 	});
 }
 
@@ -22,7 +23,7 @@ var reservationData = {};
 $("#resv_date").on("click", function(){
 
 
-	var day = $(this).toString();
+	var day = $(this).val();
 	reservationData.day = day;
 
 });
@@ -39,3 +40,5 @@ $("#resv_form").on("submit", function(e){
 	reservationsRef.push(reservationData);
 
 });
+
+console.log(reservationData);

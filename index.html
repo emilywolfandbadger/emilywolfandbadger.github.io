@@ -23,7 +23,12 @@
 		<h3>Make a Reservation</h3>
 		<form id="resv_form">
 			<input type="text" placeholder="Name" id="resv_name">
-			<input type="date" id="resv_date">
+			<button type="button" data-toggle="dropdown" id="resv_date">Choose a day</button>
+			<ul>
+				<li><a>Today</a></li>
+				<li><a>Tomorrow</a></li>
+				<li><a>In 2 days</a></li>
+			</ul>
 			<button>Confirm Reservation</button>
 		</form>
 
