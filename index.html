@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
 		<meta charset="UTF-8">
+
+
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
 		<title>Tom's Restaurant</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
@@ -21,14 +27,20 @@
 	<h2>Reservations</h2>
 	<div id="make_resv">
 		<h3>Make a Reservation</h3>
+
 		<form id="resv_form">
+
 			<input type="text" placeholder="Name" id="resv_name">
-			<input type="date" id="resv_date">
-			<!-- <ul>
-				<li><a>Today</a></li>
-				<li><a>Tomorrow</a></li>
-				<li><a>In 2 days</a></li>
-			</ul> -->
+
+			<div class="dropdown">
+
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="resv_date">Choose a day ></button>
+				<ul class="dropdown-menu">
+					<li><a>Today</a></li>
+					<li><a>Tomorrow</a></li>
+					<li><a>In 2 days</a></li>
+				</ul>
+		</div>
 			<button>Confirm Reservation</button>
 		</form>
 
@@ -89,6 +101,10 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
 <script src="js/main.js"></script>
 

@@ -20,7 +20,7 @@ function initMap(){
 
 var reservationData = {};
 
-$("#resv_date").on("click", function(){
+$("#resv_date li").on("click", function(){
 
 
 	var day = $(this).val();
