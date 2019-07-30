@@ -7,14 +7,13 @@ function initMap(){
 	var map = new google.maps.Map(document.getElementById("map"), {
 
 		center: {lat: 40.8054491, lng: -73.9654415},
-		zoom: 10,
-		scrollwheel: false
+		zoom: 10
 	});
 
 	var marker = new google.maps.Marker({
 		position: {lat: 40.8054491, lng: -73.9654415},
 		map: map,
-		title: "Location of Monk's Cafe"
+		title: "Location of Mike's Cafe"
 	});
 }
 
@@ -24,7 +23,7 @@ $("#resv_date").next("ul").children("li").on("click", function(){
 
 
 	var day = $(this).text();
-	
+
 	reservationData.day = day;
 
 });
