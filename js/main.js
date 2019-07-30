@@ -41,7 +41,7 @@ $("#resv_form").on("submit", function(e){
 
 });
 
-console.log(reservationData);
+//console.log(reservationData);
 
 function getReservations(){
 
@@ -55,3 +55,19 @@ function getReservations(){
 	// firebase.database().ref("reservations".on("value", )
 
 };
+
+$("document").ready(){
+	
+	var source = $("#reservation-template").html();
+	var template = Handlebars.compile(source);
+	var data = {name: getReservations.name,
+				day: getReservations.day};
+	var newReservationHTML = template(data);
+	
+	$("#resv_list").append(newReservationHTML);			
+
+};
+
+
+
+
