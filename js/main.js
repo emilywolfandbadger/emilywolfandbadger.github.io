@@ -42,3 +42,16 @@ $("#resv_form").on("submit", function(e){
 });
 
 console.log(reservationData);
+
+function getReservations(){
+
+	ref.on("child_added", function(snapshot, prevChildKey){
+
+		var newReservation = snapshot.val();
+		console.log(newReservation.name);
+		console.log(newReservation.day);
+	})
+
+	// firebase.database().ref("reservations".on("value", )
+
+};
