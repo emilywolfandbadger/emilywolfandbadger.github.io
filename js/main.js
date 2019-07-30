@@ -56,7 +56,7 @@ function getReservations(){
 
 };
 
-$("document").ready(){
+$("document").ready(function(){
 	
 	var source = $("#reservation-template").html();
 	var template = Handlebars.compile(source);
@@ -66,7 +66,7 @@ $("document").ready(){
 	
 	$("#resv_list").append(newReservationHTML);			
 
-};
+});
 
 
 
