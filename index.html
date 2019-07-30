@@ -3,22 +3,33 @@
 <head>
 		<meta charset="UTF-8">
 
-
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-		<title>Tom's Restaurant</title>
+		<title>Mike's Cafe</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-inverse" data-offset="50">
+
+	<script id="reservation-template" type="text/x-handlebars-template">
+		<tr>
+			<td>{{name}}</td>
+			<td>{{day}}</td>
+		</tr>
+	</script>
 
 <div id="header">
-	<h1 id="logo">Monk’s Cafe</h1>
+	<a href="#" id="logo">Mike's Cafe</a>
 		<p id="tagline">“The Coffee Shop”</p>
+		<ul>
+			<li><a href="#reservations">Reservations</a></li>
+			<li><a href="#come_dine">Map</a></li>
+			<li><a href="#reviews">Reviews</a></li>
+		</ul>
+
 		<img src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg">
 </div>
 
@@ -49,21 +60,19 @@
 
 	<div id="exist_resv">
 		<h3>Existing Reservations</h3>
-		<table id="table_of_resv">
+		<table id="table_of_resv" class="table table-striped col-md-12 container-fluid">
 			<thead>
 				<th>Name</th>
 				<th>Day</th>
 			</thead>
-			<tbody></tbody>
+			<tbody class="reservation-list"></tbody>
 		</table>
-
-
 	</div>
 </div>		
 
 <div id="come_dine">
 	<h2>Come Dine with Us</h2>
-		<div id="map"></div>
+		<div id="map" class="container-fluid restaurant-locator"></div>
 	</div>
 
 <div id="reviews" class="clearfix">

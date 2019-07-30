@@ -7,7 +7,7 @@ function initMap(){
 	var map = new google.maps.Map(document.getElementById("map"), {
 
 		center: {lat: 40.8054491, lng: -73.9654415},
-		zoom: 10
+		zoom: 10,
 		scrollwheel: false
 	});
 
@@ -20,10 +20,11 @@ function initMap(){
 
 var reservationData = {};
 
-$("#resv_date li").on("click", function(){
+$("#resv_date").next("ul").children("li").on("click", function(){
 
 
-	var day = $(this).val();
+	var day = $(this).text();
+	
 	reservationData.day = day;
 
 });
