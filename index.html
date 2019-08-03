@@ -41,11 +41,11 @@
 
 		<form id="resv_form">
 
-			<input type="text" placeholder="Name" id="resv_name">
+			<input type="text" placeholder="Name" id="resv_name" name="resv_name">
 
 			<div class="dropdown">
 
-				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="resv_date">Choose a day ></button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" name="resv_date" id="resv_date">Choose a day ></button>
 				<ul class="dropdown-menu">
 					<li><a>Today</a></li>
 					<li><a>Tomorrow</a></li>
@@ -114,6 +114,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 
 <script src="js/main.js"></script>
 
