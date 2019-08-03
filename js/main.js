@@ -45,26 +45,25 @@ $("#resv_form").on("submit", function(e){
 
 function getReservations(){
 
-	ref.on("child_added", function(snapshot, prevChildKey){
+	database.ref("reservations").on("child_added", function(snapshot, prevChildKey){
 
 		var newReservation = snapshot.val();
-		console.log(newReservation.name);
-		console.log(newReservation.day);
-	})
 
-	// firebase.database().ref("reservations".on("value", )
+		var source = $("#reservation-template").html();
+		var template = Handlebars.compile(source);
+		var data = {name: newReservation.name,
+					day: newReservation.day};
+		var newReservationHTML = template(data);
+		
+		$("#resv_list").append(newReservationHTML);	
 
+	
+	});
 };
 
 $("document").ready(function(){
 	
-	var source = $("#reservation-template").html();
-	var template = Handlebars.compile(source);
-	var data = {name: getReservations.name,
-				day: getReservations.day};
-	var newReservationHTML = template(data);
-	
-	$("#resv_list").append(newReservationHTML);			
+			getReservations();
 
 });
 
