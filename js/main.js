@@ -39,17 +39,7 @@ $("#resv_form").on("submit", function(e){
 
 	reservationsRef.push(reservationData);
 
-	$("#resv_form").validate({
-		rules: {
-			resv_name: {
-				required:true,
-				minlength: 1
-			}
-			resv_date: {
-				required:true
-			}
-		}
-	});
+	
 
 });
 
@@ -74,8 +64,22 @@ function getReservations(){
 };
 
 $("document").ready(function(){
+
+	$("#resv_form").validate({
+		rules: {
+			resv_name: {
+				required:true,
+				minlength: 1
+			}
+			resv_date: {
+				required:true
+			}
+		}
+	});
 	
 			getReservations();
+
+
 
 });
 
