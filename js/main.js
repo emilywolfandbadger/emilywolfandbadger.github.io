@@ -65,17 +65,17 @@ function getReservations(){
 
 $("document").ready(function(){
 
-	$("#resv_form").validate({
-		rules: {
-			resv_name: {
-				required:true,
-				minlength: 1
-			}
-			resv_date: {
-				required:true
-			}
-		}
-	});
+	// $("#resv_form").validate({
+	// 	rules: {
+	// 		resv_name: {
+	// 			required:true,
+	// 			minlength: 1
+	// 		}
+	// 		resv_date: {
+	// 			required:true
+	// 		}
+	// 	}
+	// });
 	
 			getReservations();
 

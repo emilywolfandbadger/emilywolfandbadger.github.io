@@ -1,31 +1,51 @@
 body {
-	color: gray;
+	color: black;
 	text-align: center;
 	font-size: 16px;
 	font-style: sans-serif;
 	font-family: "Montserrat", "Arial", sans-serif;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 }
-h1 {
+#logo {
 	color: black;	
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 0.4em;
 }
-#header {
+#nav_links {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+#nav_links li {
+	display: inline;
+	font-weight: bold;
+}
+#nav_links li a {
+	padding: 1em;
+	color: black;
+}
+#navbar {
+	background-color: yellow;
 }
 #header img {
-			width: 90%;
+			width: 100%;
 }
 #reservations {
 	width: 100%;
 }
-#make_resv {
-	width: 49%;
+#make_resv, .dropdown-menu {
+	width: 47%;
 	float: left;
+	margin: 1em;
 }
 #exist_resv {
-	width: 49%;
+	width: 47%;
 	float: right;
+	margin: 1em;
 }
 #come_dine {
+	float: center;
 }
 #reviews {
 }
@@ -39,8 +59,10 @@ h1 {
 #map {
 	height: 50em;
 	width: 50%;
-	margin: 0;
-	padding: 100px;
+	/*margin: 2em;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 #reviews img {
 	float: left;
@@ -53,6 +75,12 @@ h1 {
 #table_of_resv {
 	border: 1px solid black;
 	float: center;
+}
+#review1 {
+	padding: 2em;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
 }
 
 
