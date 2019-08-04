@@ -32,6 +32,8 @@ $("#resv_form").on("submit", function(e){
 
 	e.preventDefault();
 
+	
+
 	var name = $("#resv_name").val();
 	reservationData.name = name;
 
@@ -65,17 +67,17 @@ function getReservations(){
 
 $("document").ready(function(){
 
-	// $("#resv_form").validate({
-	// 	rules: {
-	// 		resv_name: {
-	// 			required:true,
-	// 			minlength: 1
-	// 		}
-	// 		resv_date: {
-	// 			required:true
-	// 		}
-	// 	}
-	// });
+	$("#resv_form").validate({
+		rules: {
+			resv_name: {
+				required:true,
+				minlength: 1
+			},
+			resv_date: {
+				required:true
+			}
+		}
+	});
 	
 			getReservations();
 

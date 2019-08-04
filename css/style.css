@@ -7,10 +7,10 @@ body {
 	/*border: 2px solid black;*/
 }
 #logo {
-	color: black;	
+	color: #242424;	
 	font-size: 40px;
 	font-weight: bold;
-	letter-spacing: 0.4em;
+	letter-spacing: 0.3em;
 }
 #nav_links {
 list-style-type: none;
@@ -26,10 +26,17 @@ padding: 0;
 	color: black;
 }
 #navbar {
-	background-color: yellow;
+	background-color: #fca19a;
+	padding: 1em;
 }
-#header img {
-			width: 100%;
+#header {
+
+}
+#head_img {
+	height: 30em;
+	width: 100%;
+	background-image: url("http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg");
+	background-position: center;
 }
 #reservations {
 	width: 100%;
@@ -56,6 +63,9 @@ padding: 0;
   height: 0;
   clear: both;
 }
+h3 {
+	padding: 1em;
+}
 #map {
 	height: 50em;
 	width: 50%;
@@ -73,7 +83,7 @@ padding: 0;
 	padding: 2em;
 }
 #table_of_resv {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	float: center;
 }
 #review1 {
@@ -82,5 +92,28 @@ padding: 0;
 	font-weight: bold;
 	color: black;
 }
-
+#hours {
+	
+	
+}
+#hours_links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#hours li {
+	color: gray;
+	padding: 0.3em;
+}
+.day {
+	font-weight: bold;
+}
+.title {
+	background-color: #f0bfbb;
+	padding: 1em;
+	/*margin: 1em;*/
+}
+#tagline {
+	font-style: italic;
+}
 
